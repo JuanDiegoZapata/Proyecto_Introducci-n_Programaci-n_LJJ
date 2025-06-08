@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tavola</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tavola</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+ 
   <div class="content">
-  <div class="menu container">
-    <a href="index.html" class="logo"><img src="imagenes/tavola.png" alt=""></a>
-    <input type="checkbox" id="menu" />
-    <label for="menu">
-      <img src="" class="menu-icono" alt="">
-    </label>
-   <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-    </nav>
+    <div class="menu container">
+      <a href="index.html" class="logo">
+        <img src="imagenes/tavola.png" alt="Logo Tavola" />
+      </a>
 
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="imagenes/menu.svg" class="menu-icono" alt="Menú" />
+      </label>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-</div>
+  </div>
 
-    <h2>Inicio de Sesión</h2>
+  
+  <h2>Inicio de Sesión</h2>
+
   <form id="loginForm" novalidate>
     <input type="text" id="username" placeholder="Usuario" required />
     <input type="password" id="password" placeholder="Contraseña" required />
     <button type="submit">Ingresar</button>
   </form>
+
   <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
 
   <script src="js/login.js"></script>
-
-
-
-
-    
 </body>
 </html>
