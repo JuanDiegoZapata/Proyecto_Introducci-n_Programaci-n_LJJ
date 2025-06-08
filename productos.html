@@ -1,131 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tavola</title>
-    <link rel="stylesheet" href="css/productos.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tavola</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      min-height: 100vh;
+      padding: 30px 0;
+    }
+    .product-box {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+    .product-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+    .product-box img {
+      max-height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 8px;
+    }
+    .precio {
+      color: #28a745;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .btn-3 {
+      background-color: #ff6f00;
+      color: #fff;
+      border: none;
+      padding: 7px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-3:hover {
+      background-color: #e65c00;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="row g-4">
 
-<div class="box">
-    <img src="imagenes/Pastelpollo.jpg" alt="">
-    <div class="product-txt">
-        <h2>Pastel de Pollo</h2>
-        <p class="precio">$4000</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/Pastelpollo.jpg" alt="Pastel de Pollo" />
+          <div class="product-txt">
+            <h2>Pastel de Pollo</h2>
+            <p class="precio">$4000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
 
-    <div class="box">
-    <img src="imagenes/Empanadascarnedesmechada.jpg" alt="">
-    <div class="product-txt">
-        <h2>Empanada Carne Desmechada</h2>
-        <p class="precio">$3500</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-    <div class="box">
-    <img src="imagenes/Palitoguayaba.jpg" alt="">
-    <div class="product-txt">
-        <h2>Palo de Guayaba y Queso</h2>
-        <p class="precio">$2500</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/Empanadascarnedesmechada.jpg" alt="Empanada Carne Desmechada" />
+          <div class="product-txt">
+            <h2>Empanada Carne Desmechada</h2>
+            <p class="precio">$3500</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/Palitoguayaba.jpg" alt="Palo de Guayaba y Queso" />
+          <div class="product-txt">
+            <h2>Palo de Guayaba y Queso</h2>
+            <p class="precio">$2500</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agrega más productos siguiendo el mismo patrón -->
+      <!-- Ejemplo: -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/polloytocineta.jpg" alt="Empanada de Pollo y Tocineta" />
+          <div class="product-txt">
+            <h2>Empanada de Pollo y Tocineta</h2>
+            <p class="precio">$3500</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/Cocacola.jpg" alt="Coca Cola 400ml" />
+          <div class="product-txt">
+            <h2>Coca Cola 400ml</h2>
+            <p class="precio">$3500</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/palito queso.jpg" alt="palito queso" />
+          <div class="product-txt">
+            <h2>Palito de Queso</h2>
+            <p class="precio">$2500</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/polloytocineta.jpg" alt="polloytocineta" />
+          <div class="product-txt">
+            <h2>Empanada de Pollo y Tocineta</h2>
+            <p class="precio">$3500</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/Imagen de WhatsApp 2025-05-18 a las 17.52.12_b1d5c99b.jpg" alt="Coca Cola 250ml" />
+          <div class="product-txt">
+            <h2>Coca Cola 250ml</h2>
+            <p class="precio">$2500</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/paisa.jpg" alt="paisa" />
+          <div class="product-txt">
+            <h2>Empanada Paisa </h2>
+            <p class="precio">$3900</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/Chocoramo.jpg" alt="Chocoramo" />
+          <div class="product-txt">
+            <h2>Chocoramo</h2>
+            <p class="precio">$3000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/Papaslimon.jpg" alt="Papaslimon" />
+          <div class="product-txt">
+            <h2>Papa Natural</h2>
+            <p class="precio">$4000</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="product-box">
+          <img src="imagenes/Aguabrisa.jpg"alt="Aguabrisa" />
+          <div class="product-txt">
+            <h2>Agua Brisa Manzana</h2>
+            <p class="precio">$1500</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
 
     </div>
-    </div>
-    <div class="box">
-    <img src="imagenes/empanadapapaycarne.jpg" alt="">
-    <div class="product-txt">
-        <h2>Empanada de Papa y Carne</h2>
-        <p class="precio">$2600</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-
-    </div>
-    </div>
-    <div class="box">
-    <img src="imagenes/Panzaroti.jpg" alt="">
-    <div class="product-txt">
-        <h2>Panzeroti</h2>
-        <p class="precio">$3500</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-
-    </div>
-    <div class="box">
-    <img src="imagenes/palito queso.jpg" alt="">
-    <div class="product-txt">
-        <h2>Palito de Queso</h2>
-        <p class="precio">$2500</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-</div>
-    <div class="box">
-    <img src="imagenes/polloytocineta.jpg" alt="">
-    <div class="product-txt">
-        <h2>Empanada de Pollo y Tocineta</h2>
-        <p class="precio">$3500</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-    </div>
-    <div class="box">
-    <img src="imagenes/Cocacola.jpg" alt="">
-    <div class="product-txt">
-        <h2>Coca Cola 400ml</h2>
-        <p class="precio">$3500</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-</div>
-    <div class="box">
-    <img src="imagenes/paisa.jpg" alt="">
-    <div class="product-txt">
-        <h2>Empanada Paisa </h2>
-        <p class="precio">$3900</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-<div class="box">
-    <img src="imagenes/Imagen de WhatsApp 2025-05-18 a las 17.52.12_b1d5c99b.jpg" alt="">
-    <div class="product-txt">
-        <h2>Coca cola 250ml</h2>
-        <p class="precio">$2400</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-<div class="box">
-    <img src="imagenes/Chocoramo.jpg" alt="">
-    <div class="product-txt">
-        <h2>Chocoramo</h2>
-        <p class="precio">$3000</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-    <div class="box">
-    <img src="imagenes/Papaslimon.jpg" alt="">
-    <div class="product-txt">
-        <h2>Papa Natural</h2>
-        <p class="precio">$4000</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-<div class="box">
-    <img src="imagenes/Aguabrisa.jpg" alt="">
-    <div class="product-txt">
-        <h2>Agua Brisa Manzana</h2>
-        <p class="precio">$1500</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-
-    <div class="box">
-    <img src="imagenes/Vive100.jpg" alt="">
-    <div class="product-txt">
-        <h2>Vive 100 380ml</h2>
-        <p class="precio">$3800</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-<div class="box">
-    <img src="imagenes/Gala.jpg" alt="">
-    <div class="product-txt">
-        <h2>Gala 60g</h2>
-        <p class="precio">$2700</p>
-        <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
-    </div>
-
-    </div>
+  </div>
 </body>
 </html>
+
+
